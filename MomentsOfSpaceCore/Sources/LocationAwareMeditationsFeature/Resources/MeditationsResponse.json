@@ -1,0 +1,17 @@
+[
+   {
+      "id":1,
+      "audio_files":[
+         {
+            "id":101,
+            "name":"",
+            "audio":"https://api.momentsofspace.com/api/audio/101/download/",
+            "version":"1.0",
+            "duration_seconds":527
+         }
+      ],
+      "title":"By the Sea",
+      "subtitle":"Breathe the sea air",
+      "description":"Wind down and rest with the sand between your toes."
+   }
+]
