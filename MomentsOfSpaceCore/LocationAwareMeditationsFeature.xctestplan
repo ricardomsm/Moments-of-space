@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "65871893-B935-4310-99FD-91AEA9C8A971",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "LocationAwareMeditationsFeatureTests",
+        "name" : "LocationAwareMeditationsFeatureTests"
+      }
+    }
+  ],
+  "version" : 1
+}

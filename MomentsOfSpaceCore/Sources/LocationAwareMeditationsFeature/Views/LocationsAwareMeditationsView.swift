@@ -41,7 +41,7 @@ public struct LocationsAwareMeditationsView: View {
 
 	// Due to time some of the colors aren't a match, definitely need a color picker app 🥲.
 	public var body: some View {
-		NavigationView {
+		NavigationStack {
 			ZStack {
 				Color.white.edgesIgnoringSafeArea(.all)
 
@@ -65,9 +65,16 @@ public struct LocationsAwareMeditationsView: View {
 					}
 				}
 			}
-			.navigationTitle("Meditations")
-			.navigationBarTitleDisplayMode(.large)
 			.toolbar {
+				ToolbarItem(placement: .navigationBarLeading) {
+					Text("Meditations")
+						.font(.largeTitle)
+						.foregroundStyle(LinearGradient(colors: [.pink, .cyan], startPoint: .leading, endPoint: .trailing))
+					// Magic padding number to avoid UINavigationBar appearance magicks 🔨🔮, may break on other devices 🥲
+						.padding(.top, 80)
+				}
+				
+
 				ToolbarItem(placement: .navigationBarTrailing) {
 					Button(action: { store.send(.view(.locationButtonWasTapped)) }) {
 						Image(systemName: "location.circle")
@@ -78,6 +85,7 @@ public struct LocationsAwareMeditationsView: View {
 					}
 				}
 			}
+			.navigationBarTitleDisplayMode(.large)
 		}
 		.task { store.send(.view(.onAppear)) }
 	}

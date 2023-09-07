@@ -28,6 +28,12 @@ extension LocationsAwareMeditationsService {
 	) async throws -> [LocationsAwareMeditations] {
 		try await getLocationAwareMeditations(latitude, longitude)
 	}
+
+	static func mock(
+		getLocationAwareMeditations: @escaping (Double?, Double?) async throws -> [LocationsAwareMeditations] = { _,_ in [] }
+	) -> Self {
+		.init(getLocationAwareMeditations: getLocationAwareMeditations)
+	}
 }
 
 // MARK: - Dependency registry

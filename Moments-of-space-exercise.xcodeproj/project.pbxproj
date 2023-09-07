@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		482A7C3B2AA9FEBA0050DB35 /* LocationAwareMeditationsFeature.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = LocationAwareMeditationsFeature.xctestplan; path = MomentsOfSpaceCore/LocationAwareMeditationsFeature.xctestplan; sourceTree = "<group>"; };
 		483A85712AA9BEE2002DC68D /* MomentsOfSpaceCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MomentsOfSpaceCore; sourceTree = "<group>"; };
 		48845EBD2AA9BDC200E4E21E /* Moments-of-space-exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moments-of-space-exercise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48845EC02AA9BDC200E4E21E /* MomentsOfSpaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsOfSpaceApp.swift; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		48845EB42AA9BDC200E4E21E = {
 			isa = PBXGroup;
 			children = (
+				482A7C3B2AA9FEBA0050DB35 /* LocationAwareMeditationsFeature.xctestplan */,
 				483A85712AA9BEE2002DC68D /* MomentsOfSpaceCore */,
 				48845EBF2AA9BDC200E4E21E /* Moments-of-space-exercise */,
 				48845EBE2AA9BDC200E4E21E /* Products */,
